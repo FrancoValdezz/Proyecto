@@ -23,58 +23,7 @@ body{
     font-size: 20px;
 }
 
-
-
-.nav-bar{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: flex;
-    background: #F9E2AF;
-    height: 50px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-bar__titulo{
-    font-size: 30px;
-    margin: 10px;
-    padding: 0px 10px;
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-
-
-.nav-bar ul{
-    display: flex;
-
-    
-}
-
-.nav-bar ul li{
-    padding: 0px 5px;
-    margin: 10px;
-    list-style: none;
-    
-    
-    
-
-}
-a{
-    text-decoration: none;
-}
-.nav-bar ul li a:hover{
-    color: #5c5442;
-
-}
-
-.nav-bar ul a{
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-}
 /* FIN DEL CONTAINES */
-
 /* ARTICLES */
 .infocontainer{
     padding: 50px;
@@ -125,16 +74,11 @@ a{
     text-align: center;
     justify-content: center;
     align-items: center;
-    
-} 
-.banner div{
     color: white;
-    display: flex;
-    width: 16rem;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-}
+    padding: 0 20px;
+} 
+
 
 .banner p{
     font-size: 18px;
@@ -638,5 +582,46 @@ tampoco pude hacer que la nav bajara con ninguna position */
     background-color: #3b5998;
     width: 500px;
     border-radius: 5px;
+
+}
+
+@media screen and (max-width: 1000px){
+    .infocontainer div{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .infocontainer div h3{
+        text-align: left;
+        
+    }
+    .info img{
+        width: 100%;
+    }
+
+    .info{
+        display: block;
+    }
+
+
+    .clase img{
+        width: 100%;
+    }
+    
+    .clase{
+        display: block;
+    }
+    .estudiar img{
+        width: 100%;
+    }
+    
+    .estudiar{
+        display: block;
+    }
+
+
+
 
 }
