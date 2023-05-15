@@ -126,29 +126,7 @@ footer a {
 /* ASIDE -- TUVE VARIOS PROBLEMAS PARA AGREGAR OTRO ELEMENTO DONDE QUERIA ASI QUE NO LO PUSE  */
 
 /* NAV BAR CARRERA */
-.carrera__nav-bar {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: flex;
-    background: #F9E2AF;
-    height: 50px;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    float: right;
-}
 
-.carrera__nav-bar li{
-    list-style: none;
-
-}
-
-.carrera__nav-bar li a {
-    text-decoration: none;
-    margin: 5px;
-    color: #000;
-    font-size: 19px;
-    font-weight: bold;
-}
 
 /* ASIDE -- TUVE VARIOS PROBLEMAS PARA AGREGAR OTRO ELEMENTO DONDE QUERIA ASI QUE NO LO PUSE  */
 .conteiner__aside__main{
@@ -176,46 +154,21 @@ aside div{
 }
 
 aside img{
-    margin: auto;
+    margin: 0 auto;
     width: 50px;
     border-radius: 50%;
     margin-top: 10px;
 }
 
-
-
-aside ul{
-    display: flex;
-    flex-direction: column;
-    margin: 0px auto;
-    margin-top: 50px;
-    
-
+aside p{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+aside h3{
+    text-align: center;
 }
 
-
-aside ul li{
-    display: inline-flex;
-    font-size: 19px;
-    list-style: none;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 10px;
-    
-    
-}
-aside ul li:hover{
-    background-color: #646464;
-    color: white;
-}
-
-
-aside ul a{
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-    
-}
 /*--------------- ACA EMPIEZA EL MAIN--------------  */
 
 
@@ -246,7 +199,6 @@ tampoco pude hacer que la nav bajara con ninguna position */
 
 .main__carrera .conteiner .t{
     text-align: center;
-    
     width: 88%;
 }
 
@@ -254,7 +206,7 @@ tampoco pude hacer que la nav bajara con ninguna position */
     display: flex;
     flex-direction: row ;
     width: 20rem;
-    background-color:  #fdd06d;
+    background-color:  #050505;
     border-radius: 20px;
     margin: 15px;
     border: #f3c563 1px solid;
@@ -280,18 +232,20 @@ tampoco pude hacer que la nav bajara con ninguna position */
 .main__carrera .card__carreras p{
     font-size: 20px;
     padding: 10px 0;
+    color: white;
 }
 
 .card__carreras button{
     display: block;
     font-size: 20px;
-    background-color: #000000;
+    background-color: #fffebb;
     color: white;
     margin-bottom: 5px;
     padding: 5px;
     width: 100%;
     cursor: pointer;
     border-radius: 10px;
+    border: none;
 }
 
 /* Fin pagina de carrera */
@@ -302,11 +256,8 @@ tampoco pude hacer que la nav bajara con ninguna position */
 .head__informacion{
     height: 25%;
     width: 100%;
-    background-color: #000000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    background-color: #FFF2CC;
+    text-align: center;
 }
 
 
@@ -318,12 +269,12 @@ tampoco pude hacer que la nav bajara con ninguna position */
 }
 
 .head__informacion h2{
-    color:white ;
+    color:rgb(2, 2, 2) ;
     margin: auto;
     font-size: 40px;
 }
 .head__informacion p{
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 20px;
     padding: 5px;
 }
@@ -344,9 +295,8 @@ tampoco pude hacer que la nav bajara con ninguna position */
 
 .main__section{
     width: 500px;
-    border: #000000 solid 1px;
     border-radius: 20px;
-    background-color: hsl(42, 96%, 78%);
+    background-color: #FFF2CC;
     background-size: cover;
     padding: 10px 5px 0 5px
 
@@ -355,9 +305,9 @@ tampoco pude hacer que la nav bajara con ninguna position */
 .main__section__div{
     padding: 5px;
     display: flex;
-    border: #000 1px solid;
     border-radius: 5px;
     margin: 5px 0 20px;
+    border: #000 1px solid;
 
 }
 
@@ -387,7 +337,7 @@ tampoco pude hacer que la nav bajara con ninguna position */
 /* Inicio pagina de becas */
 /* A esta pagina se la copie a una universidad de mexico no tal cual pero tiene la esencia */
 .becas__conteiner{
-    width: 50%;
+    width: 70%;
     height: 100%;
     background-color: #f3dd99;
     margin: 0 auto;
@@ -396,25 +346,9 @@ tampoco pude hacer que la nav bajara con ninguna position */
 .becas__conteiner img{
     display: block;
     width: 100%;
+    border-top: #000 solid 1px;
 }
 
-.becas__conteiner nav{
-    width: 100%;
-    background-color: #000;
-
-}
-.becas__conteiner ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.becas__conteiner li{
-    font-size: 20px;
-    margin: 5px;
-    padding: 5px;
-    color: white;
-}
 
 .becas__main h2{
     font-size: 30px;
@@ -427,7 +361,7 @@ tampoco pude hacer que la nav bajara con ninguna position */
 }
 
 .becas__main a{
-
+    text-decoration: none;
     display: flex;
 }
 
@@ -585,6 +519,104 @@ tampoco pude hacer que la nav bajara con ninguna position */
 
 }
 
+/* EMPIEZA LA PAGINA*/
+
+
+
+
+.article_tops{
+    padding: 20px;
+    width: 100%;
+    
+
+}
+
+.conteiner__page__tops{
+    display: flex;
+}
+
+.table__pagetops{
+    border: solid 1px black;
+    font-size: 20px;
+    background-color: #f1f1f1;
+    width: 75%;
+    
+}
+/* FILA CON LAS CARACTERISTAS */
+.table__pagetops thead{
+    color: white;
+    background-color: #3b3620;
+    
+    
+}
+.table__pagetops tr th{
+    padding: 5px
+}
+
+.table__pagetops tr td{
+    padding: 10px;
+    border-bottom: #000 solid 1px;
+}
+.table__pagetops tbody tr:hover{
+    background-color: #e2e2e2;
+    cursor: pointer;
+    
+}
+
+
+.table__pagetops .td__center{
+    text-align: center;
+}
+
+/* "ASIDE" CON INFORMACION Y COSAS */
+
+.aside__pagetops{
+    margin-left: 10px;
+}
+
+.aside__informacion__pagetops{
+    background-color:#f1f1f1 ;
+    padding: 5px;
+    border: 1px black solid;
+    border-radius: 15px;
+    height: 60%;
+}
+.aside__caracteristicas__pagetops{
+    background-color:#f1f1f1;
+    padding: 5px;
+    border: 1px black solid;
+    border-radius: 15px;
+    height: 35%;
+    margin-top: 10px;
+}
+
+
+
+
+
+.text_article_tops{
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    background-color: rgb(146, 146, 82);;
+    color: white;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.imgMia{
+    width: 640px;
+    height: 427px;
+}
+.miCarrusel{
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
 @media screen and (max-width: 1000px){
     .infocontainer div{
         margin-top: 15px;
@@ -623,5 +655,94 @@ tampoco pude hacer que la nav bajara con ninguna position */
 
 
 
+    /* ACA EMEPIEZA AL PAGINA DE TOPS  */
 
+
+
+    .h2__tops{
+        font-size: 20px;
+    }
+    .table__pagetops{
+        width: 100%;
+    }
+
+    .table__pagetops tr th{
+        font-size: 17px;
+    }
+    .table__pagetops tr td{
+        font-size: 17px;
+    }
+    
+    
+    .conteiner__page__tops{
+        flex-direction: column;
+    }
+    .aside__pagetops h4{
+        text-align: center;
+    }
+
+    .aside__pagetops {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .aside__informacion__pagetops{
+        width: 100%;
+        height: 200px;
+        margin-top: 10px;
+        overflow: hidden;
+    
+    }
+    .aside__caracteristicas__pagetops{
+        width: 100%;
+    }
+
+    .text_article_tops{
+        font-size: 25px;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 425px){
+    .h2__tops{
+        font-size: 17px;
+    }
+    .table__pagetops tr th{
+        font-size: 17px;
+    }
+    .table__pagetops tr td{
+        font-size: 17px;
+    }
+    
+    
+    .conteiner__page__tops{
+        flex-direction: column;
+    }
+    .aside__pagetops h4{
+        text-align: center;
+    }
+
+    .aside__pagetops {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .aside__informacion__pagetops{
+        width: 100%;
+        height: 200px;
+        margin-top: 10px;
+        overflow: hidden;
+        /* ACA ME GUSTARIA TENER UN BOTONSITO PARA PODER HACER MAS GRANDE EL CONTENEDOR */
+    }
+    .aside__caracteristicas__pagetops{
+        width: 100%;
+    }
+
+    .text_article_tops{
+        font-size: 15px;
+    }
+    
 }
