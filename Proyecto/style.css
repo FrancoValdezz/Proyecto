@@ -23,6 +23,16 @@ body{
     font-size: 20px;
 }
 
+.listaitem a{
+    transition: 0.2s;
+
+}
+
+.listaitem a:hover{
+    transform: scale(1.1);
+}
+
+
 /* FIN DEL CONTAINES */
 /* ARTICLES */
 .infocontainer{
@@ -210,15 +220,24 @@ tampoco pude hacer que la nav bajara con ninguna position */
     border-radius: 20px;
     margin: 15px;
     border: #f3c563 1px solid;
+    transition: 0.4s;
 
     
 }
+
+.conteiner_card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px black;
+}
+
 
 
 .main__carrera .card__carreras{
     width: 250px;
     margin: 0 auto;
 }
+
+
 
 .main__carrera .card__carreras h3{
     color: rgb(255, 255, 255);
@@ -238,7 +257,7 @@ tampoco pude hacer que la nav bajara con ninguna position */
 .card__carreras button{
     display: block;
     font-size: 20px;
-    background-color: #fffebb;
+    background-color: #4b4b41;
     color: white;
     margin-bottom: 5px;
     padding: 5px;
@@ -355,7 +374,7 @@ tampoco pude hacer que la nav bajara con ninguna position */
     text-align: center;
 }
 
-.becas__main section{
+.becas__main article{
     padding: 10px;
 
 }
@@ -369,7 +388,7 @@ tampoco pude hacer que la nav bajara con ninguna position */
     text-decoration: none;
 }
 
-.becas__main article{
+.becas__main section{
     text-align: center;
     color: rgb(0, 0, 0);
     width: 100%;
@@ -380,14 +399,26 @@ tampoco pude hacer que la nav bajara con ninguna position */
     max-width: 100%;
     background-image: url("https://via.placeholder.com/700x175");
     margin-bottom: 10px;
+    transition: 0.2s;
+
+
+
 /* No supe donde encontrar imagenes para que se adapten bien o como hacerlo hubiera quedado mucho mejor  */
 }
-.becas__main article h3{
+.becas__main section h3{
     font-size: 25px;
 }
 
-.becas__main article p {
+.becas__main section p {
     font-size: 18px;
+}
+
+
+.becas__main section:hover{
+    height: 200px;
+    transform: scale(1.01);
+    box-shadow: 0px 0px 20px black;
+    
 }
 
 
