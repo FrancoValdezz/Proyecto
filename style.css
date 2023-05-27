@@ -68,6 +68,9 @@ body{
     align-items: center;
     flex-direction: row-reverse;
 }
+
+
+
 .estudiar{
     display: flex;
     align-items: center;
@@ -139,16 +142,10 @@ footer a {
 
 
 /* ASIDE -- TUVE VARIOS PROBLEMAS PARA AGREGAR OTRO ELEMENTO DONDE QUERIA ASI QUE NO LO PUSE  */
-.conteiner__aside__main{
-    display: flex;
-    width: 100%;
-}
 
 aside{
-    display: flex;
-    flex-direction: column;
     height: 100vh;
-    width: 13%;
+    width: 15%;
     background-color: #f1d28a;
     border-right:  #000000 solid 1px;
     position: sticky;
@@ -156,22 +153,16 @@ aside{
     left: 0;
 }
 
-aside div{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    top: 0;
-}
 
 aside img{
-    margin: 0 auto;
+    display: block;
+    margin: 10px auto 0;
     width: 50px;
     border-radius: 50%;
-    margin-top: 10px;
 }
 
 aside p{
-    text-align: center;
+    padding: 5px;
     margin-top: 20px;
     margin-bottom: 50px;
 }
@@ -182,75 +173,65 @@ aside h3{
 /*--------------- ACA EMPIEZA EL MAIN--------------  */
 
 
-
-.main__carrera{
+.carreras_main{
     display: flex;
+}
+
+.conteiner_carrera{
+    width: 85%;
+    margin: 0 auto;
+}
+.conteiner_carrera h2{
+    text-align: center;
+}
+
+
+.conteiner_cards{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
+}
+
+
+
+
+
+.card__carreras{
+    width: 300px;
     margin: 0 auto;
-}
-
-
-
-/* No se si es la forma correcta para que el contenido del main no quede abajo del aside que tiene position:fixed pero es lo que vi por internet */
-
-
-/* No lo pude centrar probe de mil formas pero el aside con fixed me rompia todo siempre y no supe solucionarlo. Si despues de entregarlo me pueden dar una solucion estaria bueno! y se los agradeceria
-tampoco pude hacer que la nav bajara con ninguna position */
-.main__carrera .conteiner{
-    display: flex;
-    width: 88%;
-    align-items: center;
-    justify-content: start;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.main__carrera .conteiner .t{
-    text-align: center;
-    width: 88%;
-}
-
-.main__carrera .conteiner_card{
-    display: flex;
-    flex-direction: row ;
-    width: 20rem;
-    background-color:  #050505;
-    border-radius: 20px;
+    background-color:  #232533;
     margin: 15px;
-    border: #f3c563 1px solid;
+    color: white;
+    border: #000 solid 1px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px black;
     transition: 0.4s;
-
-    
+    cursor: pointer;
 }
 
-.conteiner_card:hover{
-    transform: scale(1.05);
-    box-shadow: 0px 0px 5px black;
+.card__carreras:hover{
+    scale: 1.1;
+    box-shadow: 0px 0px 20px black;
 }
 
-
-
-.main__carrera .card__carreras{
-    width: 250px;
-    margin: 0 auto;
+.card__carreras img{
+    width: 100%;
 }
 
-
-
-.main__carrera .card__carreras h3{
+.card__carreras h3{
     color: rgb(255, 255, 255);
     text-align: center;
     margin: 10px;
 }
-.main__carrera img{
-    display: block;
-    margin: 0 auto;
+
+.separador{
+    padding: 10px;
 }
-.main__carrera .card__carreras p{
+
+.card__carreras p{
     font-size: 20px;
-    padding: 10px 0;
+    padding: 5px 5px;
     color: white;
 }
 
@@ -259,12 +240,17 @@ tampoco pude hacer que la nav bajara con ninguna position */
     font-size: 20px;
     background-color: #4b4b41;
     color: white;
-    margin-bottom: 5px;
     padding: 5px;
     width: 100%;
     cursor: pointer;
     border-radius: 10px;
     border: none;
+}
+
+
+
+.ultima{
+    justify-self: flex-start;
 }
 
 /* Fin pagina de carrera */
@@ -638,6 +624,8 @@ tampoco pude hacer que la nav bajara con ninguna position */
 .imgMia{
     width: 640px;
     height: 427px;
+    object-fit: cover;
+    opacity: .7;
 }
 .miCarrusel{
     color: rgb(0, 0, 0);
@@ -686,7 +674,8 @@ tampoco pude hacer que la nav bajara con ninguna position */
 
 
 
-    /* ACA EMEPIEZA AL PAGINA DE TOPS  */
+/* -----------------------------PAGINA DE TOPS 1000PX---------------------
+------------------------------------------------------------------------ */
 
 
 
@@ -733,6 +722,53 @@ tampoco pude hacer que la nav bajara con ninguna position */
     }
 
 
+/* -----------------------------PAGINA DE CARRERAS 1000PX---------------------
+------------------------------------------------------------------------ */
+    
+    .carreras_main{
+        flex-direction: column;
+    }
+    /* Me gusto como quedo el aside. pero como podria hacer
+    para que cuando pase el mouse por el logo 
+    las letras vayan apareciando de a poco y no tan derepente 
+    tipo, ahora van como acomodandose cuando paso el mouse*/
+    aside{
+        width: 50px;
+        height: 50px;
+        background-color: #FFF2CC;
+        border: none;
+        transition: 0.2s ease;
+    }
+
+    aside:hover {
+        width: 100%;
+        background-color: #f1d28a;
+        height: 100%;
+        border-bottom: #000 1px solid;
+    }
+    aside:hover p{
+        display: contents;
+        
+    }
+    aside:hover h3{
+        display: block;
+
+    }
+
+
+    .tituloaside ,.textoaside{
+        display: none;
+    }
+
+    .card__carreras{
+        border-bottom: #000 solid 1px;
+        overflow: hidden;
+    }
+    .separador p{
+        display: none; 
+    }
+
+    
 
 }
 
@@ -775,5 +811,8 @@ tampoco pude hacer que la nav bajara con ninguna position */
     .text_article_tops{
         font-size: 15px;
     }
+    
+
+
     
 }
