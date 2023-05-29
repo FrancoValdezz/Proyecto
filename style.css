@@ -342,16 +342,20 @@ aside h3{
 /* Inicio pagina de becas */
 /* A esta pagina se la copie a una universidad de mexico no tal cual pero tiene la esencia */
 .becas__conteiner{
-    width: 70%;
+    width: 80%;
     height: 100%;
     background-color: #f3dd99;
     margin: 0 auto;
     
 }
-.becas__conteiner img{
-    display: block;
+.becas__conteiner .imagen{
+    height: 400px;
     width: 100%;
     border-top: #000 solid 1px;
+    background-image: url(images/beca.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -360,12 +364,15 @@ aside h3{
     text-align: center;
 }
 
+/* CONTIENE A LOS ARTICULOS  */
+
 .becas__main article{
     padding: 10px;
-
 }
 
-.becas__main a{
+
+/* ES EL ARTICULO EN SI */
+.becas__main div{
     text-decoration: none;
     display: flex;
 }
@@ -375,23 +382,25 @@ aside h3{
 }
 
 .becas__main section{
-    text-align: center;
     color: rgb(0, 0, 0);
     width: 100%;
-    padding: 5px;
+    padding: 20px;
     height: 150px;
     border-radius: 50px;
     word-wrap: break-word;
     max-width: 100%;
-    background-image: url("https://via.placeholder.com/700x175");
+    background-image: url("/images/5203298.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     margin-bottom: 10px;
     transition: 0.2s;
+    
 
 
-
-/* No supe donde encontrar imagenes para que se adapten bien o como hacerlo hubiera quedado mucho mejor  */
 }
 .becas__main section h3{
+    
     font-size: 25px;
 }
 
@@ -399,11 +408,31 @@ aside h3{
     font-size: 18px;
 }
 
+.buttom__becas{
+    background-color: #4b4b41;
+    border: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    color: white;
+    border-radius: 20px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
 
 .becas__main section:hover{
     height: 200px;
     transform: scale(1.01);
     box-shadow: 0px 0px 20px black;
+    
+}
+
+.becas__main section:hover .buttom__becas{
+    margin: auto;
+    opacity: 1;
+    display: block;
+    float: left;
     
 }
 
@@ -632,6 +661,52 @@ aside h3{
 }
 
 
+/* PAGINA DE 404 */
+.conteiner404{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    font-family: monospace;
+    color: #000000;
+}
+.conteiner404 h1{
+    font-size: 33px;
+}
+
+.conteiner404 img{
+    width: 100%;
+    height: 75%;
+    box-shadow: 0px 0px 10px;
+    border-radius: 10px;
+    background-color: #f1d28a ;
+    margin-top: 10px;
+}
+.conteiner404 p{
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 10px;
+}
+.conteiner404 button{
+    cursor: pointer;
+    font-size: 22px;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    background-color: #f3dd99;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    
+}
+.conteiner404 p span{
+    display: block;
+    font-weight: bold;
+}
+
 
 
 
@@ -738,6 +813,10 @@ aside h3{
         background-color: #FFF2CC;
         border: none;
         transition: 0.2s ease;
+        margin-bottom: 30px;
+        position: relative;
+        top: 0;
+        left: 0;
     }
 
     aside:hover {
@@ -768,9 +847,40 @@ aside h3{
         display: none; 
     }
 
+    /* -----------------------------PAGINA DE 404 1000PX---------------------
+------------------------------------------------------------------------ */
+    .conteiner404 p{
+        display: none;
+
+    }
+    /* -----------------------------PAGINA DEL INDEX.HTML 1000PX---------------------
+------------------------------------------------------------------------ */
+    .infocontainer{
+        width: 100%;
+        padding: 15px;
+        margin: 0px;
+        
+    }
+    .info img{
+        width: 100%;
+    }
+
     
 
 }
+
+
+
+@media screen and (max-width: 768px){
+    /* POR AHORA LA UNICA QUE HE VISTO QUE ERA NECESARIO 
+    -----------------------------PAGINA DE 404 1000PX---------------------
+------------------------------------------------------------------------ */ 
+    .conteiner404 h1{
+        font-size: 23px;
+    }
+}
+
+
 
 
 @media screen and (max-width: 425px){
@@ -815,5 +925,35 @@ aside h3{
 
     /* -----------------------------PAGINA DE CARRERAS 425PX---------------------
 ------------------------------------------------------------------------ */
+    
 
+
+    /* POR AHORA LA UNICA QUE HE VISTO QUE ERA NECESARIO 
+        -----------------------------PAGINA DE 404 425PX---------------------
+    ------------------------------------------------------------------------ */ 
+    .conteiner404 h1{
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+        /* POR AHORA LA UNICA QUE HE VISTO QUE ERA NECESARIO 
+    -----------------------------PAGINA DEL INDEX.HTML 425PX---------------------
+------------------------------------------------------------------------ */ 
+
+    .infocontainer{
+        width: 100%;
+        padding: 15px;
+        margin: 0px;
+        
+    }
+    .info img{
+        width: 100%;
+    }
+
+    .info p{
+        font-size: 20px;
+    }
+    
 }
+
+
+
