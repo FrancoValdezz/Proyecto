@@ -530,6 +530,7 @@ aside h3 {
   border-radius: 5px;
 }
 
+/* Pagina de tops */
 /* EMPIEZA LA PAGINA DE TOPS */
 .article_tops {
   padding: 20px;
@@ -617,6 +618,7 @@ aside h3 {
   color: rgb(0, 0, 0);
 }
 
+/* Pagina de 404 */
 /* PAGINA DE 404 */
 .conteiner404 {
   width: 80%;
@@ -676,6 +678,7 @@ aside h3 {
   font-weight: bold;
 }
 
+/* responsives */
 @media screen and (max-width: 1000px) {
   .infocontainer div {
     margin-top: 15px;
