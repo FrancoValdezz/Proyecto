@@ -1,0 +1,24 @@
+/* Estilos cambiados de la nav de boostrap */
+.minavbar{
+    background-color:#F9E2AF ;
+}
+.navbar-titulo{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.listaitem{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.listaitem a{
+    transition: 0.2s;
+
+}
+
+.listaitem a:hover{
+    transform: scale(1.1);
+}

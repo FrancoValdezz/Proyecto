@@ -1,0 +1,29 @@
+footer{
+    padding: 5px;
+}
+
+footer div{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.div2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    margin: 0px 6px;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+}
+

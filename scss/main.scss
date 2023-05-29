@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #FFF2CC;
+}
+
+@import "nav.scss";
+
+/* Articulo del main que contiene todo el main del index */
+@import "_index_article.scss";
+
+/* Footer de la pagina index */
+@import "_index_footer.scss";
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/* Pagina de carreras inicia aca */
+
+@import "_carrera_aside.scss";
+
+/* Contenedor de las cards  de carreras */
+@import "_carrera_main";
+
+/* Pagina de becas */
+
+@import "_becas_article";
+
+/* Pagina de login - No le veo sentido crearle un css a cada elemento como en la pagina de becas */
+
+@import "_login.scss";
+
+
+@import "_tops.scss";
+
+@import "_pagina404.scss";
+
+@import "_responsive.scss";
+
+
+

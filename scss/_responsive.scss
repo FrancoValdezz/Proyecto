@@ -1,0 +1,270 @@
+
+@media screen and (max-width: 1000px) {
+    .infocontainer div {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .infocontainer div h3 {
+        text-align: left;
+
+    }
+
+    .info img {
+        width: 100%;
+    }
+
+    .info {
+        display: block;
+    }
+
+
+    .clase img {
+        width: 100%;
+    }
+
+    .clase {
+        display: block;
+    }
+
+    .estudiar img {
+        width: 100%;
+    }
+
+    .estudiar {
+        display: block;
+    }
+
+
+
+    /* -----------------------------PAGINA DE TOPS 1000PX---------------------
+------------------------------------------------------------------------ */
+
+
+
+    .h2__tops {
+        font-size: 20px;
+    }
+
+    .table__pagetops {
+        width: 100%;
+    }
+
+    .table__pagetops tr th {
+        font-size: 17px;
+    }
+
+    .table__pagetops tr td {
+        font-size: 17px;
+    }
+
+
+    .conteiner__page__tops {
+        flex-direction: column;
+    }
+
+    .aside__pagetops h4 {
+        text-align: center;
+    }
+
+    .aside__pagetops {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .aside__informacion__pagetops {
+        width: 100%;
+        height: 200px;
+        margin-top: 10px;
+        overflow: hidden;
+
+    }
+
+    .aside__caracteristicas__pagetops {
+        width: 100%;
+    }
+
+    .text_article_tops {
+        font-size: 25px;
+    }
+
+
+    /* -----------------------------PAGINA DE CARRERAS 1000PX---------------------
+------------------------------------------------------------------------ */
+
+    .carreras_main {
+        flex-direction: column;
+    }
+
+    /* Me gusto como quedo el aside. pero como podria hacer
+    para que cuando pase el mouse por el logo 
+    las letras vayan apareciando de a poco y no tan derepente 
+    tipo, ahora van como acomodandose cuando paso el mouse*/
+    aside {
+        width: 50px;
+        height: 50px;
+        background-color: #FFF2CC;
+        border: none;
+        transition: 0.4s;
+        margin-bottom: 30px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    aside p {
+        opacity: 0;
+        transition: 0.4s ease;
+    }
+
+    aside:hover {
+        width: 100%;
+        background-color: #f1d28a;
+        height: 100%;
+        border-bottom: #000 1px solid;
+        opacity: 1;
+    }
+
+    aside:hover p {
+        display: contents;
+        opacity: 1;
+
+    }
+
+    aside:hover h3 {
+        display: block;
+
+    }
+
+
+    .tituloaside,
+    .textoaside {
+        display: none;
+    }
+
+    .card__carreras {
+        border-bottom: #000 solid 1px;
+        overflow: hidden;
+    }
+
+    .separador p {
+        display: none;
+    }
+
+    /* -----------------------------PAGINA DE 404 1000PX---------------------
+------------------------------------------------------------------------ */
+    .conteiner404 p {
+        display: none;
+
+    }
+
+    /* -----------------------------PAGINA DEL INDEX.HTML 1000PX---------------------
+------------------------------------------------------------------------ */
+    .infocontainer {
+        width: 100%;
+        padding: 15px;
+        margin: 0px;
+
+    }
+
+    .info img {
+        width: 100%;
+    }
+
+
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    /* POR AHORA LA UNICA QUE HE VISTO QUE ERA NECESARIO 
+    -----------------------------PAGINA DE 404 1000PX---------------------
+------------------------------------------------------------------------ */
+    .conteiner404 h1 {
+        font-size: 23px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 425px) {
+    .h2__tops {
+        font-size: 17px;
+    }
+
+    .table__pagetops tr th {
+        font-size: 17px;
+    }
+
+    .table__pagetops tr td {
+        font-size: 17px;
+    }
+
+
+    .conteiner__page__tops {
+        flex-direction: column;
+    }
+
+    .aside__pagetops h4 {
+        text-align: center;
+    }
+
+    .aside__pagetops {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .aside__informacion__pagetops {
+        width: 100%;
+        height: 200px;
+        margin-top: 10px;
+        overflow: hidden;
+        /* ACA ME GUSTARIA TENER UN BOTONSITO PARA PODER HACER MAS GRANDE EL CONTENEDOR */
+    }
+
+    .aside__caracteristicas__pagetops {
+        width: 100%;
+    }
+
+    .text_article_tops {
+        font-size: 15px;
+    }
+
+
+    /* -----------------------------PAGINA DE CARRERAS 425PX---------------------
+------------------------------------------------------------------------ */
+
+
+
+    /* POR AHORA LA UNICA QUE HE VISTO QUE ERA NECESARIO 
+        -----------------------------PAGINA DE 404 425PX---------------------
+    ------------------------------------------------------------------------ */
+    .conteiner404 h1 {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    /* POR AHORA LA UNICA QUE HE VISTO QUE ERA NECESARIO 
+    -----------------------------PAGINA DEL INDEX.HTML 425PX---------------------
+------------------------------------------------------------------------ */
+
+    .infocontainer {
+        width: 100%;
+        padding: 15px;
+        margin: 0px;
+
+    }
+
+    .info img {
+        width: 100%;
+    }
+
+    .info p {
+        font-size: 20px;
+    }
+}

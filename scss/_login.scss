@@ -1,0 +1,126 @@
+.body__login{
+    
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: burlywood;
+    
+}
+/* ESTE SERIA EL CONTENEDOR DE LOS 2 DIVS */
+.login__container{
+    background-color: #F9E2AF;
+    color: rgb(0, 5, 8);
+    width: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+.login{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.login__container .login h2{
+    text-align: center;
+    font-size: 2.5rem;
+
+}
+
+.login__container .login .titulo {
+    text-align: center;
+    color: #000000;
+}
+
+
+
+.login__container .login label{
+    display: block;
+    font-weight: bolder;
+    padding: 5px 2px;
+
+    
+}
+
+.login__container .login input.input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+
+
+
+.login__container .login .check{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login__container .login .check p {
+    display: inline-flex;
+}
+
+.login__container .login .check a {
+    color: rgb(98, 207, 112);
+    text-decoration: none;
+}
+.login__container .login .check a:hover{
+    text-decoration: underline;
+}
+/* BOTONES  */
+.btn{
+    border: none;
+    padding: 15px;;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    margin: 5px 0px;
+    font-weight: bolder;
+}
+
+.login__container .login .tipos{
+    display: flex;
+    justify-content: center;
+}
+.btn.btn-login{
+    background-color: black;
+    color: white;
+}
+
+.btn.btn-facebook{
+    background-color: #3b5998;
+    
+}
+.btn.btn-instagram{
+    background-color: #850049;
+    
+}
+.btn.btn-twitter{
+    background-color: #1DA1F2;
+
+}
+.imagen{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.imagen .informacion{
+    display: flex;
+    background-color: #3b5998;
+    width: 500px;
+    border-radius: 5px;
+
+}

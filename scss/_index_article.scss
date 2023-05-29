@@ -1,0 +1,65 @@
+/* ARTICLES */
+.infocontainer{
+    padding: 50px;
+    display: block;
+    
+}
+
+
+.infocontainer img{
+    width: 50%;
+}
+
+.infocontainer div {
+    padding: 50px;
+}
+.infocontainer div h3{
+    font-size: 30px;
+    text-align: center;
+}
+.infocontainer p{
+    font-size: 18px;
+}
+
+
+.info{
+    display: flex;
+    align-items: center;
+}
+
+.clase{ 
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+
+
+.estudiar{
+    display: flex;
+    align-items: center;
+}
+/* Fin de las imagenes intercaladas */
+
+/* Iinicio del banner - No se como ajustar una imagen para que me quede bien a lo ancho */
+.banner{
+    display: flex;
+    margin-top: 2rem;
+    background-color: #3b3620;
+    height: 17rem;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    padding: 0 20px;
+} 
+
+
+.banner p{
+    font-size: 18px;
+}
+.banner a{
+    color: chartreuse;
+}
