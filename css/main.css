@@ -289,14 +289,14 @@ aside h3 {
   margin: 0 auto;
 }
 
-.becas__conteiner .imagen {
+.becas__conteiner .imagen_becas {
   height: 400px;
   width: 100%;
   border-top: #000 solid 1px;
-  background-image: url(images/beca.svg);
-  background-position: center;
+  background-image: url("../images/beca.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .becas__main h2 {
@@ -329,7 +329,7 @@ aside h3 {
   border-radius: 50px;
   word-wrap: break-word;
   max-width: 100%;
-  background-image: url("/images/5203298.svg");
+  background-image: url("../images/5203298.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
