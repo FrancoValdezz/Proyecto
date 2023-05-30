@@ -322,16 +322,16 @@ aside h3 {
 }
 
 .becas__main section {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   width: 100%;
   padding: 20px;
   height: 150px;
   border-radius: 50px;
   word-wrap: break-word;
   max-width: 100%;
-  background-image: url("../images/5203298.svg");
-  background-repeat: no-repeat;
+  background-image: url("../images/tenis.jpg");
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 10px;
   -webkit-transition: 0.2s ease;
@@ -531,6 +531,13 @@ aside h3 {
   background-color: #3b5998;
   width: 500px;
   border-radius: 5px;
+}
+
+.imagen {
+  background-image: url("../images/ingeniero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Pagina de tops */
