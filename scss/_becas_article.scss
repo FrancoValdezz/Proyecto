@@ -18,8 +18,9 @@
 
 
 .becas__main h2{
-    font-size: 30px;
+    font-size: 60px;
     text-align: center;
+    color: #000;
 }
 
 /* CONTIENE A LOS ARTICULOS  */
@@ -39,6 +40,8 @@
     text-decoration: none;
 }
 
+
+/* CARACTERISTCAS DEL SECCION */
 .becas__main section{
     color: rgb(255, 255, 255);
     width: 100%;
@@ -55,12 +58,41 @@
     transition: 0.2s ease;
     flex-wrap: wrap;
     
+    
 
 
 }
-.becas__main section h3{
-    
-    font-size: 25px;
+.beca_titulo {
+    margin-top: 10px;
+    font-size: 30px;
+    position: relative;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Tilt Prism', cursive;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+
+
+}
+
+/* LINEAS PARA EL COSTADO DEL TITULO */
+.beca_titulo::before , .beca_titulo::after{
+    content: "";
+    position: relative;
+    width: 20%;
+    height: 5px;
+    background-color: rgb(46, 68, 61);
+    top: 2rem;
+    border-radius: 10px;
+
+}
+
+.beca_titulo::before{
+    left: -20px;
+}
+.beca_titulo::after{
+    right: -20px;
 }
 
 .becas__main section p {
@@ -76,7 +108,7 @@
     color: white;
     border-radius: 20px;
     opacity: 0;
-    transition: 0.5s ;
+    transition: 0.3s ease ;
 }
 /* Boton que aparezca cuando paso el mouse o le hago click */
 
@@ -88,10 +120,12 @@
     
 }
 
+
 .becas__main section:hover .buttom__becas{
-    margin: auto;
     opacity: 1;
     display: block;
     float: left;
+    
+    
     
 }

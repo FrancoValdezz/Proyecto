@@ -15,11 +15,11 @@ body {
 .navbar-titulo {
   font-size: 30px;
   font-weight: bold;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .listaitem {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-weight: bold;
   font-size: 20px;
 }
@@ -356,8 +356,9 @@ aside h3 {
 }
 
 .becas__main h2 {
-  font-size: 30px;
+  font-size: 60px;
   text-align: center;
+  color: #000;
 }
 
 /* CONTIENE A LOS ARTICULOS  */
@@ -377,6 +378,7 @@ aside h3 {
   text-decoration: none;
 }
 
+/* CARACTERISTCAS DEL SECCION */
 .becas__main section {
   color: rgb(255, 255, 255);
   width: 100%;
@@ -396,8 +398,37 @@ aside h3 {
       flex-wrap: wrap;
 }
 
-.becas__main section h3 {
-  font-size: 25px;
+.beca_titulo {
+  margin-top: 10px;
+  font-size: 30px;
+  position: relative;
+  font-family: "Pacifico", cursive;
+  font-family: "Tilt Prism", cursive;
+  display: inline-block;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+/* LINEAS PARA EL COSTADO DEL TITULO */
+.beca_titulo::before, .beca_titulo::after {
+  content: "";
+  position: relative;
+  width: 20%;
+  height: 5px;
+  background-color: rgb(46, 68, 61);
+  top: 2rem;
+  border-radius: 10px;
+}
+
+.beca_titulo::before {
+  left: -20px;
+}
+
+.beca_titulo::after {
+  right: -20px;
 }
 
 .becas__main section p {
@@ -413,8 +444,8 @@ aside h3 {
   color: white;
   border-radius: 20px;
   opacity: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 /* Boton que aparezca cuando paso el mouse o le hago click */
@@ -428,7 +459,6 @@ aside h3 {
 }
 
 .becas__main section:hover .buttom__becas {
-  margin: auto;
   opacity: 1;
   display: block;
   float: left;
@@ -894,6 +924,12 @@ aside h3 {
   .becas__main section p {
     display: none;
   }
+  .becas__main section:hover .buttom__becas {
+    opacity: 1;
+    display: block;
+    float: left;
+    margin-top: 50px;
+  }
   .imagen {
     display: none;
   }
@@ -909,6 +945,19 @@ aside h3 {
   .login__container {
     width: 100%;
     height: 100%;
+  }
+  /* 
+      -----------------------------PAGINA DE BECAS 425PX---------------------
+  ------------------------------------------------------------------------ */
+  /* LINEAS DEL TITULO */
+  .beca_titulo::before, .beca_titulo::after {
+    content: "";
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(46, 68, 61);
+    top: 1.1rem;
+    border-radius: 10px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -969,5 +1018,18 @@ aside h3 {
   }
   .info p {
     font-size: 20px;
+  }
+  /* 
+      -----------------------------PAGINA DE BECAS 425PX---------------------
+  ------------------------------------------------------------------------ */
+  /* LINEAS DEL TITULO */
+  .beca_titulo::before, .beca_titulo::after {
+    content: "";
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(46, 68, 61);
+    top: 1.1rem;
+    border-radius: 10px;
   }
 }

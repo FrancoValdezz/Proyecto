@@ -188,6 +188,15 @@
     .becas__main section p{
         display: none;
     }  
+    .becas__main section:hover .buttom__becas{
+        opacity: 1;
+        display: block;
+        float: left;
+        margin-top: 50px;
+        
+        
+    }
+
 
     .imagen{
     display: none;
@@ -211,6 +220,22 @@
         width: 100%;
         height: 100%;
     }
+
+    /* 
+    -----------------------------PAGINA DE BECAS 1000PX---------------------
+------------------------------------------------------------------------ */
+    /* LINEAS DEL TITULO */
+    .beca_titulo::before , .beca_titulo::after{
+        content: "";
+        position: relative;
+        width: 100%;
+        height: 5px;
+        background-color: rgb(46, 68, 61);
+        top: 1.1rem;
+        border-radius: 10px;
+    
+    }
+
 }
 
 
@@ -289,5 +314,19 @@
 
     .info p {
         font-size: 20px;
+    }
+    /* 
+    -----------------------------PAGINA DE BECAS 425PX---------------------
+------------------------------------------------------------------------ */
+    /* LINEAS DEL TITULO */
+    .beca_titulo::before , .beca_titulo::after{
+        content: "";
+        position: relative;
+        width: 100%;
+        height: 5px;
+        background-color: rgb(46, 68, 61);
+        top: 1.1rem;
+        border-radius: 10px;
+    
     }
 }
