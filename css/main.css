@@ -124,45 +124,97 @@ body {
 
 /* Footer de la pagina index */
 footer {
-  padding: 5px;
-}
-
-footer div {
+  padding: 0 10px 10px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.div2 {
+.redes ul {
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
-footer a {
-  color: white;
-  text-decoration: none;
-  width: 40px;
-  height: 40px;
-  background-color: #000;
-  margin: 0px 6px;
-  line-height: 40px;
-  font-size: 20px;
+footer li {
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  -webkit-box-shadow: 0px 0px 10px black;
+          box-shadow: 0px 0px 10px black;
   text-align: center;
   border-radius: 50%;
+  border: solid 5px black;
+  font-size: 30px;
+  float: left;
+  margin-right: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+footer li:hover {
+  scale: 1.1;
+}
+
+footer .fa-facebook {
+  border-radius: 50%;
+}
+
+footer .facebook:hover {
+  color: rgb(62, 62, 241);
+  -webkit-box-shadow: 0px 0px 10px rgb(62, 62, 241);
+          box-shadow: 0px 0px 10px rgb(62, 62, 241);
+  border: solid 5px rgb(62, 62, 241);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+footer li:hover .fa-facebook {
+  color: rgb(62, 62, 241);
+  -webkit-box-shadow: 0px 0px 10px rgb(62, 62, 241);
+          box-shadow: 0px 0px 10px rgb(62, 62, 241);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+footer .instagram:hover {
+  color: rgb(255, 85, 150);
+  text-shadow: 0px 0px 10px rgb(255, 85, 150);
+  border: solid 5px rgb(255, 85, 150);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+footer li:hover .fa-instagram {
+  color: rgb(255, 85, 150);
+  text-shadow: 0px 0px 10px rgb(255, 85, 150);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+footer .twitter:hover {
+  color: rgb(85, 178, 255);
+  -webkit-box-shadow: 0px 0px 10px rgb(85, 178, 255);
+          box-shadow: 0px 0px 10px rgb(85, 178, 255);
+  border: solid 5px rgb(85, 178, 255);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+footer li:hover .fa-twitter {
+  color: rgb(85, 178, 255);
+  text-shadow: 0px 0px 10px rgb(85, 178, 255);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+footer ul li .red {
+  color: rgb(48, 45, 45);
+  margin: auto 0;
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------------------- */
