@@ -222,7 +222,7 @@
     }
 
     /* 
-    -----------------------------PAGINA DE BECAS 1000PX---------------------
+    -----------------------------PAGINA DE BECAS 7PX---------------------
 ------------------------------------------------------------------------ */
     /* LINEAS DEL TITULO */
     .beca_titulo::before , .beca_titulo::after{
@@ -231,10 +231,31 @@
         width: 100%;
         height: 5px;
         background-color: rgb(46, 68, 61);
-        top: 1.1rem;
+        top: 2rem;
         border-radius: 10px;
     
     }
+    .beca_titulo::before{
+        left: -20px;
+    }
+    .beca_titulo::after{
+        right: -20px;
+    }
+
+    /* 
+    -----------------------------PAGINA DE INDEX 1000PX---------------------
+------------------------------------------------------------------------ */
+    /* FOOTER PONER EL DIV ABAJO DE OTRO */
+    footer{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    footer div{
+        margin-bottom: 5px;
+    }
+
+
 
 }
 
@@ -325,8 +346,14 @@
         width: 100%;
         height: 5px;
         background-color: rgb(46, 68, 61);
-        top: 1.1rem;
+        top: 2rem;
         border-radius: 10px;
     
+    }
+    .beca_titulo::before{
+        left: -20px;
+    }
+    .beca_titulo::after{
+        right: -20px;
     }
 }

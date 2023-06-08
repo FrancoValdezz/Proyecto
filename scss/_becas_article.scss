@@ -1,19 +1,24 @@
 .becas__conteiner{
     width: 80%;
     height: 100%;
-    background-color: #f3dd99;
-    margin: 0 auto;
+    background-color:  #FFF2CC;
+    margin: 0 auto 20px;
+    color: white;
     
 }
 .becas__conteiner .imagen_becas{
     height: 400px;
     width: 100%;
+    display: flex;
     border-top: #000 solid 1px;
     background-image: url("../images/beca.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
+}
+hr{
+    color: grey;
 }
 
 
@@ -42,26 +47,55 @@
 
 
 /* CARACTERISTCAS DEL SECCION */
-.becas__main section{
-    color: rgb(255, 255, 255);
+.becas__main .informacion_becas{
     width: 100%;
     padding: 20px;
     height: 150px;
     border-radius: 50px;
     word-wrap: break-word;
     max-width: 100%;
-    background-image: url("../images/tenis.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     margin-bottom: 10px;
     transition: 0.2s ease;
     flex-wrap: wrap;
     
-    
+}
 
+.manuel_belgrano{
+    background-image: url("../images/manuelbelgrano.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.becas_depostiva{
+    background-image: url("../images/tenis.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.progresar{
+    background-image: url("../images/progresar.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.familiar{
+    background-image: url("../images/familiar.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.examen{
+    color: black;
+    background-image: url("../images/examen.jpg") ;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
+
+
+
 .beca_titulo {
     margin-top: 10px;
     font-size: 30px;
